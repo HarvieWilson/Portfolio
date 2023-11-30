@@ -24,25 +24,28 @@
             <div class="profile-content">
                 <h2>Harvie Wilson <img src="assets/verified-emoji-2.png" class="height-25" /></h2>
                 <p><span id="developerWord">Passionate</span> Web Developer looking to create amazing, useful and accessible web apps. &#x1F919;</p>
-                <span class="icon-wrapper"><i class="bi bi-briefcase padding-right-5"></i> Available</span>
-                <span class="icon-wrapper icon-wrapper-cake"><i class="bi bi-cake padding-right-5"></i> December 21st</span>
+                <div class="flex flex-wrap">
+                    <span class="icon-wrapper pr-20"><i class="bi bi-briefcase padding-right-5"></i> Available</span>
+                    <span class="icon-wrapper pr-20"><i class="bi bi-cake padding-right-5"></i> December 21st</span>
+                    <span class="icon-wrapper"><i class="bi bi-calendar padding-right-5"></i> Joined Nov 2023</span>
+                </div>
             </div>
         </div>
         <div class="main-content">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item nav-item-1" role="presentation">
+                <li class="nav-item nav-item-1" role="presentation" tabindex="0">
                   <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Feed</a>
                 </li>
-                <li class="nav-item nav-item-2" role="presentation">
+                <li class="nav-item nav-item-2" role="presentation" tabindex="0">
                   <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">About</a>
                 </li>
-                <li class="nav-item nav-item-3" role="presentation">
+                <li class="nav-item nav-item-3" role="presentation" tabindex="0">
                   <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="tweet" style="margin-top: 20px;">
+                    <div class="tweet mt-20" tabindex="0">
                         <div class="tweet-content d-flex">
                             <div style="width: 10%; height: 100%; display: inline-block;">
                                 <img src="assets/profile-img.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
@@ -53,7 +56,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet" style="margin-top: 20px;">
+                    <div class="tweet mt-20" tabindex="0">
                         <div class="tweet-content d-flex">
                             <div style="width: 10%; height: 100%; display: inline-block;">
                                 <img src="assets/profile-img.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
@@ -64,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet" style="margin-top: 20px;">
+                    <div class="tweet mt-20" tabindex="0">
                         <div class="tweet-content d-flex">
                             <div style="width: 10%; height: 100%; display: inline-block;">
                                 <img src="assets/profile-img.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
@@ -75,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet" style="margin-top: 20px;">
+                    <div class="tweet mt-20" tabindex="0">
                         <div class="tweet-content d-flex">
                             <div style="width: 10%; height: 100%; display: inline-block;">
                                 <img src="assets/profile-img.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
@@ -86,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet" style="margin-top: 20px;">
+                    <div class="tweet mt-20" tabindex="0">
                         <div class="tweet-content d-flex">
                             <div style="width: 10%; height: 100%; display: inline-block;">
                                 <img src="assets/profile-img.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
@@ -98,8 +101,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <h2>Hey! 👋</h2>
+                    <p>I'm Harvie</p>
+                    <img src="assets\hw_signature.png" />
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <form action="https://usebasin.com/f/852b938acea5" method="POST">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@address.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit" type="button" aria-selected="true">Send!</button>
+                    </form>
+                    <hr />
+                    <h4>Contact Information</h4>
+                    <p class="mb-0">Email : Harview@gmx.com</p>
+                    <p class="mb-0">Phone : +44 7572 796817</p>
+                    <p class="mb-0">LinkedIn : @harview</p>
+                </div>
               </div>
         </div>
     </main>
