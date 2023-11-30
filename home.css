@@ -22,6 +22,12 @@ main {
   transition: color 1.3s ease;
 }
 
+.profile-wrapper {
+  position: relative;
+  width: 100%;
+  height: 85px;
+}
+
 .tweet {
   background-color: #212529;
   padding: 15px;
@@ -31,6 +37,23 @@ main {
 }
 .tweet:hover {
   background-color: #582070;
+}
+
+.tweet-img-wrapper {
+  width: 10%;
+  height: 100%;
+  display: inline-block;
+}
+
+.tweet-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.tweet-content-wrapper {
+  width: 80%;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .banner-img {
@@ -117,6 +140,10 @@ ul .nav-pills {
 .btn-primary:hover {
   background-color: #7d2d9f;
   border-color: #7d2d9f;
+}
+
+.form-control {
+  margin-bottom: 10px;
 }
 
 hr {
