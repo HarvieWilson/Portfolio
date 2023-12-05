@@ -1,14 +1,36 @@
 
+:root {
+  --primary-color: #97859f;
+  --secondary-color: #eeeeee;
+  --font-color: #000;
+  --bg-color: #fff;
+  --bg-color-oppo: #9499a1;
+  --form-bg-color: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #582070;
+  --secondary-color: #212529;
+  --font-color: #fff;
+  --bg-color: #16191D;
+  --bg-color-oppo: #fff;
+  --form-bg-color: #232323;
+}
+
+h1, h2, h3, h4 ,h5 ,h6, p, span, li, label {
+  color: var(--font-color)
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #16191D;
+  background-color: var(--bg-color);
   color: #fff;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #582070;
+  background-color: var(--primary-color);
   padding: 1em;
   text-align: center;
 }
@@ -34,6 +56,10 @@ a:hover {
   text-decoration-thickness: 3px;
 }
 
+.nav-link {
+  background: var(--secondary-color);
+}
+
 #developerWord {
   transition: color 1.3s ease;
 }
@@ -45,14 +71,14 @@ a:hover {
 }
 
 .tweet {
-  background-color: #212529;
+  background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
   transition: all 0.4s ease-in-out;
 }
 .tweet:hover {
-  background-color: #582070;
+  background-color: var(--primary-color);
 }
 
 .tweet-img-wrapper {
@@ -145,17 +171,12 @@ ul .nav-pills {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link, button {
-  background-color: #582070;
+  background-color: var(--primary-color) !important;
 }
 
 .btn-primary {
-  background-color: #582070;
-  border-color: #582070;
-}
-
-.btn-primary:hover {
-  background-color: #7d2d9f;
-  border-color: #7d2d9f;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .form-control {
@@ -164,6 +185,12 @@ ul .nav-pills {
 
 hr {
   border-top: 1px solid rgb(72 69 69);
+}
+
+.switch-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .padding-right-5 {
@@ -213,15 +240,15 @@ hr {
 }
 
 .form-control {
-  background-color: #232323;
+  background-color: var(--form-bg-color);
   border-color: #565555;
-  color: #fff;
+  color: var(--font-color);
 }
 
 .form-control:focus {
-  background-color: #232323;
+  background-color: var(--form-bg-color);
   border-color: #565555;
-  color: #fff;
+  color: var(--font-color);
   box-shadow: 0 0 0 0.2rem rgb(172 0 160 / 25%);
 }
 
@@ -229,13 +256,13 @@ hr {
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #582070;
+	background-color: var(--primary-color);
 }
 
 ::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #582070;
+	background-color: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb
@@ -256,4 +283,97 @@ hr {
     width: 100%;
     text-align: center;
   }
+}
+
+.switch-wrapper {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: var(--bg-color);
+  border: 1px solid grey;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-moon {color: #f1c40f;}
+
+.bi-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: var(--bg-color-oppo);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
