@@ -18,6 +18,22 @@ main {
   margin: 0 auto;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #9822ca;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
 #developerWord {
   transition: color 1.3s ease;
 }
@@ -156,6 +172,18 @@ hr {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ml-25 {
+  margin-left: 25px;
 }
 
 .mb-0 {
