@@ -5,7 +5,6 @@
   --font-color: #000;
   --bg-color: #fff;
   --bg-color-oppo: #9499a1;
-  --form-bg-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -14,7 +13,6 @@
   --font-color: #fff;
   --bg-color: #16191D;
   --bg-color-oppo: #fff;
-  --form-bg-color: #232323;
 }
 
 h1, h2, h3, h4 ,h5 ,h6, p, span, li, label {
@@ -250,14 +248,14 @@ hr {
 }
 
 .form-control {
-  background-color: var(--form-bg-color);
+  background-color: var(--secondary-color);
   border-color: #565555;
   color: var(--font-color);
   transition: all 0.4s ease-in-out;
 }
 
 .form-control:focus {
-  background-color: var(--form-bg-color);
+  background-color: var(--secondary-color);
   border-color: #565555;
   color: var(--font-color);
   box-shadow: 0 0 0 0.2rem rgb(172 0 160 / 25%);
